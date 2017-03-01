@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="max.inspiringprints.FotoDocuments"
+    android:background="@drawable/fotodoc"
+    android:padding="7dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.07"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Фото на документы"
+                android:id="@+id/textView"
+                android:layout_weight="0.8"
+                android:textColor="#ffffffff" />
+
+            <Button
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:id="@+id/button3"
+                android:onClick="Info10"
+                android:background="@drawable/button"
+                android:textColor="@android:color/holo_red_light" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Формат"
+                android:id="@+id/textView2"
+                android:textColor="@android:color/holo_red_light" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3х4 cm - 6шт."
+                android:id="@+id/radioButton"
+                android:onClick="RFD1"
+                android:textColor="#ffffffff"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton1"
+                android:onClick="RFD2"
+                android:text="3,5х4,5 cm - 4шт."
+                android:textColor="#ffffffff"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4х5 cm - 4 шт."
+                android:id="@+id/radioButton2"
+                android:onClick="RFD3"
+                android:textColor="#ffffffff"
+                android:checked="false" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5х5 cm - 2шт."
+                android:id="@+id/radioButton3"
+                android:checked="false"
+                android:onClick="RFD4"
+                android:textColor="#ffffffff" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9х12 cm - 1шт,"
+                android:id="@+id/radioButton4"
+                android:checked="false"
+                android:onClick="RFD5"
+                android:textColor="#ffffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Обработка фотографии:"
+                android:id="@+id/textView4"
+                android:textColor="@android:color/holo_red_light" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Фотомонтаж"
+                android:id="@+id/checkBox1"
+                android:singleLine="false"
+                android:textColor="#ffffffff"
+                android:checked="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.13"
+            android:gravity="left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Сумма:"
+                android:id="@+id/sum_out"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|right"
+            android:layout_weight="0.1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Посчитать"
+                android:id="@+id/button"
+                android:onClick="Count"
+                android:enabled="false"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отправить заказ"
+                android:id="@+id/button2"
+                android:clickable="true"
+                android:onClick="SendOrder"
+                android:enabled="false"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

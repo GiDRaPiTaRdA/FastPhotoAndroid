@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="max.inspiringprints.About"
+    android:background="@drawable/about">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="right">
+
+            <Space
+                android:layout_width="3dp"
+                android:layout_height="match_parent" />
+
+            <Space
+                android:layout_width="3dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.22" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="108dp"
+            android:padding="10dp"
+            android:background="#88f3ff43"
+            android:focusable="true"
+            android:layout_weight="0.23">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=
+                    "   Сучасний ритм життя вимагає досягнення поставлених цілей і результатів при мінімальних затратах зусиль і часу.
+\n\n    Саме тому фотоцентр «Швидка Фотка» зібрав для вас повний комплекс актуальних послуг у сфері фото на документи, фотодруку, фотосувенірів та поліграфії, а також копі-послуг.
+\n\n    Звернувшись до фотоцентру «Швидка Фотка», ви отримуєте своєчасні і якісні послуги.
+\n\n    Наші ціни вас приємно здивують!Графік роботи фотоцентрів дозволяє замовити послуги в зручний для вас час в будні чи вихідні. Також ви можете надіслати заявку по e-mail чи на сторінках «Швидкої Фотки» в соцмережах, і наші співробітники зв’яжуться з вами для уточнення замовлення та строків його виконання.
+\n\n    Наші фахівці гарантують індивідуальний підхід до кожного клієнта.
+\n\n    Фотоцентр «Швидка Фотка» вперше відкрився у 2011 році, стрімко завоювавши популярність. На сьогодні «Швидка Фотка» є одним з лідерів на ринку послуг у сфері фотографії, поліграфії та копі-послуг. Ми цінуємо кожного нашого клієнта.
+\n\n    Завітайте до фотоцентру «Швидка Фотка» — і ви гарантовано станете нашим постійним клієнтом!"
+                android:id="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:layout_weight="0.46"
+                android:editable="true" />
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05" />
+    </LinearLayout>
+
+</RelativeLayout>

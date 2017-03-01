@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="max.inspiringprints.Registration"
+    android:background="@drawable/face"
+    android:padding="2dp"><![CDATA[
+
+    TextView
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+    ]]>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_weight="0.05" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|bottom"
+            android:id="@+id/linearLayout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.9"
+            style="@android:style/Widget.Holo.Light.CheckedTextView"
+            android:onClick="Inf"
+            android:clickable="true">
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/name"
+                android:layout_gravity="center_horizontal"
+                android:hint="Name"
+                android:textStyle="italic" />
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/surname"
+                android:layout_gravity="center_horizontal"
+                android:hint="Surname"
+                android:textStyle="italic" />
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:inputType="number|numberDecimal"
+                android:ems="10"
+                android:id="@+id/number"
+                android:layout_gravity="center_horizontal"
+                android:hint="Telephone number"
+                android:textStyle="italic" />
+
+            <Button
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Log In"
+                android:id="@+id/button"
+                android:layout_gravity="center"
+                android:onClick="Log_in" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar"
+                android:layout_gravity="center_horizontal"
+                android:numStars="5"
+                android:clickable="true"
+                android:indeterminateOnly="false"
+                android:focusable="false"
+                android:rating="4"
+                style="@android:style/Widget.DeviceDefault.Light.RatingBar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Оцените нас"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_weight="0.05" />
+    </LinearLayout>
+
+</RelativeLayout>

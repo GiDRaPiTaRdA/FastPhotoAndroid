@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="max.inspiringprints1.Contacts"
+    android:background="@drawable/contacts"
+    android:id="@+id/lay">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.07"
+            android:gravity="center_vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About us"
+                android:id="@+id/button"
+                android:layout_gravity="right"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:onClick="About" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="right">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/button2"
+                android:background="@drawable/tel" />
+
+            <Space
+                android:layout_width="3dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/button3"
+                android:background="@drawable/email" />
+
+            <Space
+                android:layout_width="3dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/button4"
+                android:background="@drawable/vk" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.23" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="227dp"
+            android:padding="10dp"
+            android:background="#88f3ff43"
+            android:focusable="true"
+            android:layout_weight="0.24">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text=
+      "Боярка\n
+       Вул. Молодіжна 76-А\n
+       (2 поверх, ТЦ «Квартал»)\n\n
+       Графік роботи:\n
+       Будні з 9 до 19,\n
+       Вихідні з 10 до 17.\n\n
+       Тел. 066 4302444\n\n
+       e-mail: print@fast-foto.com.ua\n\n
+       ВКонтакте:\n
+       Група vk.com/fastfotocomua\n
+       Аккаунт vk.com/fastfotka\n
+       \n
+       \n
+       \n
+       Київ\n\n
+       Пл. Севастопольська (ТЦ «Купол»)\n\n
+       Графік роботи:\n
+       Будні з 9 до 19,\n
+       Субота з 9 до 17\n\n
+       Тел. 099 912-29-77\n\n
+       E-mail: 9122977@gmail.com"
+                android:id="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:layout_weight="0.46"
+                android:editable="true" />
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1" />
+    </LinearLayout>
+
+</RelativeLayout>
